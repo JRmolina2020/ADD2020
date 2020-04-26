@@ -2693,16 +2693,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "login",
   data: function data() {
@@ -2729,6 +2719,11 @@ __webpack_require__.r(__webpack_exports__);
             window.location.replace("/categoria");
           })["catch"](function (error) {
             _this.form.password = null;
+            Swal.fire({
+              icon: "error",
+              title: "Oops...",
+              text: "Verifique las credenciales de ingreso"
+            });
           });
 
           _this.$nextTick(function () {
@@ -47425,7 +47420,7 @@ var render = function() {
                         staticClass: "btn btn-danger btn-sm",
                         attrs: { type: "submit", disabled: invalid }
                       },
-                      [_vm._v("\n                Ingresar\n            ")]
+                      [_vm._v("Ingresar")]
                     )
                   ]
                 )
@@ -47446,7 +47441,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "login-logo" }, [
       _c("a", { attrs: { href: "" } }, [
         _c("b", [_vm._v("DELTA")]),
-        _vm._v("LTE ")
+        _vm._v("LTE\n    ")
       ])
     ])
   }
