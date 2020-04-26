@@ -1,7 +1,7 @@
 <template>
     <div class="login-box mt-5">
         <div class="login-logo">
-            <a href> <b>Admin</b>LTE </a>
+            <a href> <b>DELTA</b>LTE </a>
         </div>
         <ValidationObserver v-slot="{ invalid }" ref="form">
             <form method="POST" @submit.prevent="Login" autocomplete="off">

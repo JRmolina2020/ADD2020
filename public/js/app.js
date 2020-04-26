@@ -2196,6 +2196,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     row: {
@@ -46796,7 +46797,8 @@ var render = function() {
           ]
         )
       ]
-    )
+    ),
+    _vm._v("\n    hola\n")
   ])
 }
 var staticRenderFns = []
@@ -47443,7 +47445,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "login-logo" }, [
       _c("a", { attrs: { href: "" } }, [
-        _c("b", [_vm._v("Admin")]),
+        _c("b", [_vm._v("DELTA")]),
         _vm._v("LTE ")
       ])
     ])
